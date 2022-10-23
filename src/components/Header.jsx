@@ -1,5 +1,12 @@
 import "../App.css";
 import iconJavi from "../assets/icon_J1.png";
+
+window.addEventListener('scroll',()=>{
+  console.log("scroll");
+  let header = document.querySelector("header");
+  header.classList.toggle("abajo",window.scrollY>0)
+})
+
 function Header() {
   return (
     <>
