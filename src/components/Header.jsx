@@ -20,19 +20,19 @@ function Header() {
           <div className="nav__lista">
             <ul className="nav__lista-ul">
               <li className="nav__lista-ul-li">
-                <a href="#section-1">ACERCA DE MI</a>
+                <a href="#section-1">ABOUT ME</a>
               </li>
               <li className="nav__lista-ul-li">
-                <a href="#section-2">HABILIDADES</a>
+                <a href="#section-2">SKILLS</a>
               </li>
               <li className="nav__lista-ul-li">
-                <a href="#section-3">EDUCACION</a>
+                <a href="#section-3">EDUCATION</a>
               </li>
               <li className="nav__lista-ul-li">
-                <a href="#section-4">PROYECTOS</a>
+                <a href="#section-4">PROJECTS</a>
               </li>
               <li className="nav__lista-ul-li">
-                <a href="#section-5">CONTACTO</a>
+                <a href="#section-5">CONTACT</a>
               </li>
             </ul> 
           </div>

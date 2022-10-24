@@ -8,7 +8,7 @@ function AcercaDeMi() {
         <div className="div_acerca_de_mi">
           <div className="acerca_de_mi_description">
             <div className="acerca_de_mi_titulo">
-              <h2 className="titulo_acerca_de_mi">1. ACERCA DE MI</h2>
+              <h2 className="titulo_acerca_de_mi">ACERCA DE MI</h2>
             </div>
             <div className="acerca_de_mi_p">
               <p>

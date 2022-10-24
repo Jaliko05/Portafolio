@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
 const $form = document.querySelector("form");
+console.log($form)
 
-if ($form) {
-  $form.addEventListener("submit", handleSubmit);
+  $form?.addEventListener("submit", handleSubmit);
   async function handleSubmit(event) {
     event.preventDefault();
     const form = new FormData(this);
@@ -19,7 +19,7 @@ if ($form) {
       alert("Gracias por contactarmer, te escribiré pronto :)");
     }
   }
-}
+
 function Contacto() {
   return (
     <>

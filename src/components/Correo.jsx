@@ -8,7 +8,7 @@ function Correo() {
   return (
     <>
       <div className="correo" id="id_correo">
-        <a href="#"> javier.puentes01@gmail.com</a>
+        <a href="mailto:javier.puentes01@gmail.com"> javier.puentes01@gmail.com</a>
       </div>
     </>
   );

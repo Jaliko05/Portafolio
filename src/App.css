@@ -108,12 +108,12 @@
 .redes_sociles a:hover {
   filter: none;
 }
-.redes_abajo a{
-  filter: none ;
+.redes_abajo a {
+  filter: none;
   transition: 1s;
 }
-.redes_abajo a:hover{
-  filter: brightness(0%) ;
+.redes_abajo a:hover {
+  filter: brightness(0%);
 }
 /* -------------------------------------------------------------------------- */
 .correo {
@@ -138,11 +138,11 @@
 .correo a:hover {
   color: #00600f;
 }
-.correo_abajo a{
+.correo_abajo a {
   color: #00600f;
   transition: 1s;
 }
-.correo_abajo a:hover{
+.correo_abajo a:hover {
   color: #000000;
 }
 /* -------------------------------------------------------------------------- */
@@ -498,43 +498,43 @@
   box-shadow: 0px 0px 60px -28px rgba(0, 96, 15, 0.75);
   padding: 10px;
 }
-.form_mesaje{
+.form_mesaje {
   width: 50%;
   text-align: center;
 }
-.form_mesaje h1{
+.form_mesaje h1 {
   font-size: xx-large;
   padding-bottom: 7px;
   color: var(--color_secundary);
 }
-.form_input{
+.form_input {
   width: 60%;
 }
-.form_input input{
+.form_input input {
   width: 100%;
   height: 30px;
   border-radius: 10px;
   border: 1px solid rgba(0, 96, 15, 0.75);
   padding-left: 5px;
 }
-.form_input label{
+.form_input label {
   display: block;
 }
-.form_input_mensaje{
+.form_input_mensaje {
   width: 60%;
   height: 70px;
 }
-.form_input_mensaje textarea{
+.form_input_mensaje textarea {
   width: 100%;
   height: 70px;
   border-radius: 10px;
   border: 1px solid rgba(0, 96, 15, 0.75);
   padding-left: 5px;
 }
-.form_input_mensaje label{
+.form_input_mensaje label {
   display: block;
 }
-.contenedor_contacto button{
+.contenedor_contacto button {
   width: 30%;
   height: 10%;
   border-radius: 50px;
@@ -543,8 +543,188 @@
   color: var(--color_primary);
   margin: 17px 0;
 }
-.contenedor_contacto button:hover{
+.contenedor_contacto button:hover {
   background-color: #00600f;
   color: var(--color_primary);
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .correo a:hover {
+    color:var(--text);
+  }
+  .redes_sociles a:hover {
+    filter: brightness(0%);
+  }
+  .redes_abajo a:hover {
+    filter: none;
+    transition: 1s;
+  }
+  .correo_abajo a:hover {
+    color: #00600f;
+    transition: 1s;
+  }
+    /* ------------------------------- */
+  .nav__icon {
+    display: none !important;
+  }
+  .nav__lista {
+    width: 100%;
+    margin: 0;
+    padding: 9px;
+  }
+  .nav__lista-ul-li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: small;
+    font-weight: bold;
+    transition: 2.5;
+  }
+  /* --------------------- */
+  .main__bienvenida {
+    font-size: large;
+  }
+  .bienvenida {
+    padding: 0 55px;
+  }
+  /* ----------------------- */
+  .acerca_de_mi {
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+  .div_acerca_de_mi {
+    padding: 0 55px;
+    flex-wrap: wrap;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .acerca_de_mi_description {
+    margin: none;
+    height: 50%;
+  }
+  .acerca_de_mi_img {
+    padding: 0;
+    height: 50%;
+  }
+  .acerca_de_mi_img img {
+    width: 200px;
+    margin: auto;
+  }
+  /* ------------------------------ */
+  .skills_softSKill {
+    height: 600vh;
+  }
+  .skills_softSKill_contenedor {
+    padding: 0 55px;
+    width: 70%;
+  }
+  .skills_contenerdor {
+    width: 100%;
+  }
+  .softSkills_contenedor {
+    width: 100%;
+  }
+  .skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .skills_etiqueta {
+    width: 200px;
+    height: 250px;
+  }
+  .softSkills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .softSkills_etiqueta {
+    width: 200px;
+    height: 250px;
+  }
+  /* ------------------------- */
+  .educacion {
+    height: 190vh;
+  }
+  .contenedor_educacion {
+    padding: 0 55px;
+    width: 70%;
+  }
+  .contenedor_educacion_tarjetas {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+  .tarjetas_educacion {
+    width: 500px;
+    height: 350px;
+    display: flex;
+  }
+  .div_imagen {
+    width: 200px;
+    height: 250px;
+  }
+
+  .tajeta_educacion_imagen {
+    width: 200px;
+  }
+  .tajeta_educacion_imagen_electro {
+    width: 130px;
+  }
+  .tajeta_educacion_imagen_uptc {
+    width: 120px;
+  }
+  .tarjeta_educacion_nombre {
+    width: 100%;
+    height: 50px;
+  }
+  /* --------------------------- */
+  .proyectos {
+    height: 170vh;
+  }
+  .tarjeta_proyecto {
+    flex-direction: column;
+    height: 50%;
+    width: 60%;
+    margin-bottom: 31px;
+  }
+  .div_texto_tarjeta a {
+    width: 70%;
+    padding: 5px;
+  }
+  .div_texto_tarjeta {
+    width: 100%;
+    height: 50%;
+  }
+  .div_imagen_tarjeta_1 {
+    height: 50%;
+    width: auto;
+    border-radius: 0px 0px 7px 7px;
+  }
+  .div_imagen_tarjeta_2 {
+    height: 50%;
+    width: auto;
+    border-radius: 7px 7px 0px 0px;
+  }
+  /* -------------------------------- */
+  .contenedor_contacto form {
+    width: 65%;
+  }
+  .form_mesaje {
+    width: 90%;
+  }
+  .form_input {
+    width: 95%;
+  }
+  .form_input_mensaje {
+    width: 95%;
+  }
+  .contenedor_contacto button {
+    width: 50%;
+  }
 }
