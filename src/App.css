@@ -102,6 +102,18 @@
 }
 .redes_sociles a {
   width: 26px;
+  filter: brightness(0%);
+  transition: 1s;
+}
+.redes_sociles a:hover {
+  filter: none;
+}
+.redes_abajo a{
+  filter: none ;
+  transition: 1s;
+}
+.redes_abajo a:hover{
+  filter: brightness(0%) ;
 }
 /* -------------------------------------------------------------------------- */
 .correo {
@@ -121,6 +133,17 @@
   color: var(--text);
   font-size: larger;
   font-weight: bold;
+  transition: 1s;
+}
+.correo a:hover {
+  color: #00600f;
+}
+.correo_abajo a{
+  color: #00600f;
+  transition: 1s;
+}
+.correo_abajo a:hover{
+  color: #000000;
 }
 /* -------------------------------------------------------------------------- */
 .main__bienvenida {
@@ -342,7 +365,7 @@
 .div_imagen {
   height: 70%;
   width: 100%;
-  box-shadow: 0px 0px 10px 0.1px #000000;
+  box-shadow: 0px 0px 10px 0.1px rgba(0, 96, 15, 0.75);
   border-radius: 17px;
   display: flex;
   align-items: center;

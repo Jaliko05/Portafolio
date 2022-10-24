@@ -2,33 +2,30 @@ import React from "react";
 import "../App.css";
 const $form = document.querySelector("form");
 
-$form.addEventListener("submit", handleSubmit);
-async function handleSubmit(event) {
-  event.preventDefault();
-  const form = new FormData(this);
-  const response = await fetch(this.action, {
-    method: this.method,
-    body: form,
-    headers: {
-      Accept: "application/json",
-    },
-  });
-  if (response.ok) {
-    this.reset();
-    alert("Gracias por contactarmer, te escribiré pronto :)");
+if ($form) {
+  $form.addEventListener("submit", handleSubmit);
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const form = new FormData(this);
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+    if (response.ok) {
+      this.reset();
+      alert("Gracias por contactarmer, te escribiré pronto :)");
+    }
   }
 }
-
 function Contacto() {
   return (
     <>
       <section className="contacto" id="section-5">
         <div className="contenedor_contacto">
-          <form
-            id="form"
-            action="https://formspree.io/f/xpznyang"
-            method="POST"
-          >
+          <form action="https://formspree.io/f/xpznyang" method="POST">
             <div className="form_mesaje">
               <h1>Contacto</h1>
               <p>
@@ -37,9 +34,9 @@ function Contacto() {
               </p>
             </div>
             <div className="form_input">
-              <label for="nombre">Nombre</label>
+              <label htmlFor="nombre">Nombre</label>
               <input
-              name="nombre"
+                name="nombre"
                 type="text"
                 id="nombreApellido"
                 className="input_contacto"
@@ -48,9 +45,9 @@ function Contacto() {
               />
             </div>
             <div className="form_input">
-              <label for="correoElectronico">Correo Electronico</label>
+              <label htmlFor="correoElectronico">Correo Electronico</label>
               <input
-              name="correoElectronico"
+                name="correoElectronico"
                 type="email"
                 id="correoElectronico"
                 className="input_contacto"
@@ -59,9 +56,9 @@ function Contacto() {
               />
             </div>
             <div className="form_input">
-              <label for="asunto">Asunto</label>
+              <label htmlFor="asunto">Asunto</label>
               <input
-              name="asunto"
+                name="asunto"
                 type="text"
                 id="nombreApellido"
                 className="input_contacto"
@@ -71,7 +68,7 @@ function Contacto() {
             </div>
 
             <div className="form_input_mensaje">
-              <label for="mensaje">Mensaje</label>
+              <label htmlFor="mensaje">Mensaje</label>
               <textarea
                 name="mensaje"
                 id="mensaje"

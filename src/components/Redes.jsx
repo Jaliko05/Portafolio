@@ -1,12 +1,17 @@
-import iconGithub from "../assets/iconGithub.svg";
-import iconLinkedin from "../assets/iconLinkedin.svg";
-import iconInsta from "../assets/iconInsta.svg";
+import iconGithub from "../assets/iconGithub.png";
+import iconLinkedin from "../assets/iconLinkedin.png";
+import iconInsta from "../assets/iconInsta.png";
 import "../App.css";
+
+window.addEventListener('scroll',()=>{
+  let header = document.getElementById("id_redes_sociles");
+  header.classList.toggle("redes_abajo",window.scrollY>0)
+})
 
 function Redes() {
   return (
     <>
-      <div className="redes_sociles">
+      <div className="redes_sociles" id="id_redes_sociles">
         <a
           href="https://github.com/Jaliko05"
           target="_blank"
