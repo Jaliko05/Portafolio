@@ -7,6 +7,7 @@ import Bienvenida  from "./components/Bienvenida";
 import AcercaDeMi from "./components/AcercaDeMi";
 import Skills from "./components/SkillsSoftSkills";
 import Educacion from "./components/Educacion";
+import Proyecto from "./components/Proyecto";
 import "./reset.css"
 import "./App.css"
 
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <AcercaDeMi/>
     <Skills/>
     <Educacion/>
+    <Proyecto/>
   </React.StrictMode>
 );
 

@@ -20,7 +20,7 @@
 .abajo {
   width: 99%;
   height: 70px;
-  background-color: rgb(0, 96, 15,0.6);
+  background-color: rgb(0, 96, 15, 0.6);
   position: fixed;
   overflow: hidden;
   z-index: 900;
@@ -68,28 +68,28 @@
   font-weight: bold;
   transition: 2.5;
 }
-.nav__lista-ul-li a:hover{
+.nav__lista-ul-li a:hover {
   color: var(--color_secundary);
 }
-.abajo a{
+.abajo a {
   color: var(--color_primary);
   transition: 1s;
 }
-.abajo a:hover{
+.abajo a:hover {
   color: var(--text);
 }
-.abajo img{
+.abajo img {
   filter: brightness(117%) saturate(0%) contrast(448%) invert(100%);
--webkit-filter: brightness(117%) saturate(0%) contrast(448%) invert(100%);
--moz-filter: brightness(117%) saturate(0%) contrast(448%) invert(100%);
-transition: 1s;
+  -webkit-filter: brightness(117%) saturate(0%) contrast(448%) invert(100%);
+  -moz-filter: brightness(117%) saturate(0%) contrast(448%) invert(100%);
+  transition: 1s;
 }
-.abajo img:hover{
-filter: none;
+.abajo img:hover {
+  filter: none;
 }
 /* -------------------------------------------------------------------------- */
 .redes_sociles {
-  background-color: rgb(255, 255, 255,0);;
+  background-color: rgb(255, 255, 255, 0);
   height: 250px;
   padding: 30px 15px;
   position: fixed;
@@ -105,7 +105,7 @@ filter: none;
 }
 /* -------------------------------------------------------------------------- */
 .correo {
-  background-color: rgb(255, 255, 255,0);
+  background-color: rgb(255, 255, 255, 0);
   height: 24px;
   width: 260px;
   padding: 30px 10px;
@@ -128,12 +128,11 @@ filter: none;
   background-color: var(--color_primary);
   display: flex;
   flex-direction: column;
-  height: 100vh ;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   font-size: x-large;
   z-index: 800;
-
 }
 .bienvenida {
   margin: auto;
@@ -149,7 +148,7 @@ filter: none;
   color: var(--text);
   display: flex;
   color: var(--text);
-  height: 100vh  ;
+  height: 100vh;
   width: 100%;
   background-color: var(--color_primary);
   overflow: hidden;
@@ -158,7 +157,6 @@ filter: none;
 }
 
 .div_acerca_de_mi {
-  
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -191,8 +189,7 @@ filter: none;
   justify-content: space-between;
 }
 .acerca_de_mi_img img {
-  
-  width: 260px;;
+  width: 260px;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   box-shadow: 26px 27px 39px -16px rgba(0, 0, 0, 0.53);
 }
@@ -201,7 +198,7 @@ filter: none;
 .skills_softSKill {
   color: var(--text);
   display: flex;
-  height: calc(100vh - 100px) ;
+  height: calc(100vh - 100px);
   width: 100%;
   background-color: var(--color_primary);
   overflow: hidden;
@@ -216,7 +213,6 @@ filter: none;
   align-items: center;
   justify-content: space-around;
   padding: 0 100px;
-  
 }
 .skills_contenerdor {
   height: 100%;
@@ -298,7 +294,7 @@ filter: none;
 .educacion {
   color: var(--text);
   display: flex;
-  height:  calc(100vh - 100px) ;
+  height: calc(100vh - 100px);
   width: 100%;
   background-color: var(--color_primary);
   overflow: hidden;
@@ -326,7 +322,6 @@ filter: none;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
- 
 }
 .tarjetas_educacion {
   height: 70%;
@@ -338,7 +333,7 @@ filter: none;
   font-size: medium;
   padding: 10px 20px;
 }
-.tarjeta_educacion_nombre{
+.tarjeta_educacion_nombre {
   width: 100%;
   margin-top: 10px;
   margin-left: -60px;
@@ -368,3 +363,86 @@ filter: none;
   height: 10%;
 }
 
+/* --------------------------------------------- */
+
+.proyectos {
+  display: flex;
+  height: calc(150vh - 100px);
+  width: 100%;
+  background-color: var(--color_primary);
+  overflow: hidden;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.tarjeta_proyecto {
+  height: 27%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: medium;
+  border-radius: 7px;
+  box-shadow: 0px 0px 60px -28px rgba(0, 96, 15, 0.75);
+  background-color: var(--color_primary);
+}
+.div_texto_tarjeta {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.div_texto_tarjeta_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  padding: 0 10px;
+}
+.div_texto_tarjeta h2 {
+  font-size: x-large;
+  color: var(--color_secundary);
+}
+.div_texto_tarjeta p {
+  text-align: justify;
+  color: #1f1f1f;
+}
+.div_texto_tarjeta a{
+  width: 40%;
+  height: 15%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.div_texto_tarjeta button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: none;
+  background-color: #00600ec4;
+  color: var(--color_primary);
+}
+.div_texto_tarjeta button:hover{
+  background-color: #00600f;
+  color: var(--color_primary);
+  cursor: pointer;
+}
+.div_imagen_tarjeta_1 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 0px 7px 7px 0;
+}
+.div_imagen_tarjeta_2 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 7px 0px 0px 7px;
+}
+.tarjeta_proyecto img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}

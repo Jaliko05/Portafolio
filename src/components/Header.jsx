@@ -29,10 +29,10 @@ function Header() {
                 <a href="#section-3">EDUCACION</a>
               </li>
               <li className="nav__lista-ul-li">
-                <a href="#section-2">TRABAJOS</a>
+                <a href="#section-4">PROYECTOS</a>
               </li>
               <li className="nav__lista-ul-li">
-                <a href="#section-3">CONTACTO</a>
+                <a href="#section-5">CONTACTO</a>
               </li>
             </ul> 
           </div>
